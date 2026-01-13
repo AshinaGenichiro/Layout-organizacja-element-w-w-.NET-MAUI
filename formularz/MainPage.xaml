@@ -6,7 +6,10 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            HorizontalOptions="Center"
+            >
+
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -14,15 +17,34 @@
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
 
             <Label
+                HorizontalOptions="Center"
                 Text="Zaloguj sie"
             />
+            <Label
+                Text="Email:"
+                HorizontalOptions="Center"
+                />
             <Entry
                 Keyboard="Email"
+                HorizontalOptions="Center"
+                WidthRequest="700"
             />
+            <Label
+                Text="Hasło:"
+                HorizontalOptions="Center"
+                />
             <Entry
+                HorizontalOptions="Center"
+                WidthRequest="700"
                 Keyboard="Password"
             />
+            <Label
+                HorizontalOptions="Center"
+                Text="Nie masz konta zarejestruj sie"
+                />
             <Button
+                HorizontalOptions="Center"
+                WidthRequest="500"
                 Text="Zaloguj"    
             />
 
