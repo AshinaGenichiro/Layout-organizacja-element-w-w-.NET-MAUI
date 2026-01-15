@@ -3,10 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="formularz.NewPage1"
              Title="NewPage1">
-    <VerticalStackLayout>
-        <Image
-    Source="dotnet_bot.png"
-    HeightRequest="200"
-    Aspect="AspectFit"/>
-    </VerticalStackLayout>
+    <Border
+        Stroke="Black" 
+        StrokeThickness="1" 
+        Padding="0" 
+        VerticalOptions="Start">
+        <VerticalStackLayout
+          VerticalOptions="Start">
+            <Image
+            Source="dotnet_bot.png"
+            HeightRequest="200"
+            Aspect="AspectFit"/>
+            <VerticalStackLayout
+                HorizontalOptions="Center"
+                Padding="10">
+                <Label
+                FontSize="Large"
+                Text="Nazwa produktu"/>
+                <Label
+                Text="opis popis ospffkaef ef e fea"
+                TextColor="Gray"/>
+                <Label
+                Text="cena"
+                TextColor="Green"/>
+            </VerticalStackLayout>
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Padding="10">
+                <Label
+                TextColor="Gold"
+                Text="★"/>
+                <Label
+                TextColor="Gold"
+                Text="★"/>
+                <Label
+                TextColor="Gold"
+                Text="★"/>
+                <Label
+                TextColor="Gold"
+                Text="★"/>
+                <Label
+                TextColor="Gold"
+                Text="★"/>
+                <Label
+                TextColor="Gold"
+                Text="★"/>
+            </HorizontalStackLayout>
+            <VerticalStackLayout>
+                <Button
+                     Margin="10"
+                     Text="Dodaj do koszyka"/>
+                <Button
+                     Margin="10"
+                     Text="Kup teraz"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </Border>
 </ContentPage>
