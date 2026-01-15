@@ -3,60 +3,88 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="formularz.NewPage1"
              Title="NewPage1">
-    <Border
-        Stroke="Black" 
-        StrokeThickness="1" 
-        Padding="0" 
-        VerticalOptions="Start">
-        <VerticalStackLayout
-          VerticalOptions="Start">
-            <Image
-            Source="dotnet_bot.png"
-            HeightRequest="200"
-            Aspect="AspectFit"/>
-            <VerticalStackLayout
-                HorizontalOptions="Center"
-                Padding="10">
-                <Label
-                FontSize="Large"
-                Text="Nazwa produktu"/>
-                <Label
-                Text="opis popis ospffkaef ef e fea"
-                TextColor="Gray"/>
-                <Label
-                Text="cena"
-                TextColor="Green"/>
-            </VerticalStackLayout>
-            <HorizontalStackLayout
-                HorizontalOptions="Center"
-                Padding="10">
-                <Label
-                TextColor="Gold"
-                Text="★"/>
-                <Label
-                TextColor="Gold"
-                Text="★"/>
-                <Label
-                TextColor="Gold"
-                Text="★"/>
-                <Label
-                TextColor="Gold"
-                Text="★"/>
-                <Label
-                TextColor="Gold"
-                Text="★"/>
-                <Label
-                TextColor="Gold"
-                Text="★"/>
-            </HorizontalStackLayout>
-            <VerticalStackLayout>
-                <Button
-                     Margin="10"
-                     Text="Dodaj do koszyka"/>
-                <Button
-                     Margin="10"
-                     Text="Kup teraz"/>
-            </VerticalStackLayout>
-        </VerticalStackLayout>
-    </Border>
+    <ScrollView>
+        <Grid
+            Padding="10"
+            ColumnDefinitions="*,*"
+            RowDefinitions="Auto,Auto,Auto">
+            <Border Grid.Row="0" Grid.Column="0"
+                    Stroke="Black"
+                    StrokeThickness="1"
+                    Margin="5">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" HeightRequest="150"/>
+                    <Label Text="Produkt 1" FontSize="Large"/>
+                    <Label Text="Opis produktu" TextColor="Gray"/>
+                    <Label Text="99 zł" TextColor="Green"/>
+                    <Button Text="Dodaj do koszyka"/>
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1"
+                    Stroke="Black"
+                    StrokeThickness="1"
+                    Margin="5">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" HeightRequest="150"/>
+                    <Label Text="Produkt 2" FontSize="Large"/>
+                    <Label Text="Opis produktu" TextColor="Gray"/>
+                    <Label Text="120 zł" TextColor="Green"/>
+                    <Button Text="Dodaj do koszyka"/>
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0"
+                    Stroke="Black"
+                    StrokeThickness="1"
+                    Margin="5">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" HeightRequest="150"/>
+                    <Label Text="Produkt 3" FontSize="Large"/>
+                    <Label Text="Opis produktu" TextColor="Gray"/>
+                    <Label Text="80 zł" TextColor="Green"/>
+                    <Button Text="Dodaj do koszyka"/>
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1"
+                    Stroke="Black"
+                    StrokeThickness="1"
+                    Margin="5">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" HeightRequest="150"/>
+                    <Label Text="Produkt 4" FontSize="Large"/>
+                    <Label Text="Opis produktu" TextColor="Gray"/>
+                    <Label Text="150 zł" TextColor="Green"/>
+                    <Grid ColumnDefinitions="*,*"
+                              HorizontalOptions="Fill">
+
+                        <Button 
+                            Grid.Column="0"
+                            HorizontalOptions="Fill"
+                            Text="Dodaj do koszyka"/>
+
+                        <Button 
+                         Grid.Column="1"
+                         HorizontalOptions="Fill"
+                         Text="Dodaj do koszyka"/>
+                    
+                    </Grid>
+               
+
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                    Stroke="Black"
+                    StrokeThickness="1"
+                    Margin="5">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" HeightRequest="150"/>
+                    <Label Text="Produkt 5" FontSize="Large"/>
+                    <Label Text="Opis produktu" TextColor="Gray"/>
+                    <Label Text="200 zł" TextColor="Green"/>
+                    <Button Text="Dodaj do koszyka"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </Grid>
+    </ScrollView>
+ 
 </ContentPage>

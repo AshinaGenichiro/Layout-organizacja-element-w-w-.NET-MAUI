@@ -4,6 +4,8 @@
              x:Class="formularz.NewPage2"
              Title="NewPage2">
     <VerticalStackLayout>
+        <VerticalStackLayout>
+            
         <Label 
             Text="Moja Galeria"
             VerticalOptions="Center" 
@@ -11,5 +13,20 @@
             Style="{StaticResource Headline}"
             SemanticProperties.HeadingLevel="Level1"
             />
+        <Button
+            Text="Dodaj zdjęcie"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <FlexLayout Wrap="Wrap">
+                <Image
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    
+                </Image>
+            </FlexLayout>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
