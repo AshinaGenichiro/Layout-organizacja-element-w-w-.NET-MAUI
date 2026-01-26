@@ -17,7 +17,17 @@
                     <Label Text="Produkt 1" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="99 zł" TextColor="Green"/>
-                    <Button Text="Dodaj do koszyka"/>
+                    <Grid ColumnDefinitions="*,*"
+                        HorizontalOptions="Fill">
+                        <Button 
+                              Grid.Column="0"
+                              HorizontalOptions="Fill"
+                              Text="Dodaj do koszyka"/>
+                        <Button 
+                              Grid.Column="1"
+                              HorizontalOptions="Fill"
+                              Text="Dodaj do koszyka"/>
+                    </Grid>
                 </VerticalStackLayout>
             </Border>
             <Border Grid.Row="0" Grid.Column="1"
@@ -29,7 +39,17 @@
                     <Label Text="Produkt 2" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="120 zł" TextColor="Green"/>
-                    <Button Text="Dodaj do koszyka"/>
+                    <Grid ColumnDefinitions="*,*"
+                        HorizontalOptions="Fill">
+                        <Button 
+                              Grid.Column="0"
+                              HorizontalOptions="Fill"
+                              Text="Dodaj do koszyka"/>
+                        <Button 
+                              Grid.Column="1"
+                              HorizontalOptions="Fill"
+                              Text="Dodaj do koszyka"/>
+                    </Grid>
                 </VerticalStackLayout>
             </Border>
             <Border Grid.Row="1" Grid.Column="0"
@@ -41,7 +61,17 @@
                     <Label Text="Produkt 3" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="80 zł" TextColor="Green"/>
-                    <Button Text="Dodaj do koszyka"/>
+                    <Grid ColumnDefinitions="*,*"
+                        HorizontalOptions="Fill">
+                        <Button 
+                              Grid.Column="0"
+                              HorizontalOptions="Fill"
+                              Text="Dodaj do koszyka"/>
+                        <Button 
+                              Grid.Column="1"
+                              HorizontalOptions="Fill"
+                              Text="Dodaj do koszyka"/>
+                    </Grid>
                 </VerticalStackLayout>
             </Border>
             <Border Grid.Row="1" Grid.Column="1"
@@ -80,7 +110,17 @@
                     <Label Text="Produkt 5" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="200 zł" TextColor="Green"/>
-                    <Button Text="Dodaj do koszyka"/>
+                    <Grid ColumnDefinitions="*,*"
+                         HorizontalOptions="Fill">
+                        <Button 
+                               Grid.Column="0"
+                               HorizontalOptions="Fill"
+                               Text="Dodaj do koszyka"/>
+                        <Button 
+                               Grid.Column="1"
+                               HorizontalOptions="Fill"
+                               Text="Dodaj do koszyka"/>
+                    </Grid>
                 </VerticalStackLayout>
             </Border>
 

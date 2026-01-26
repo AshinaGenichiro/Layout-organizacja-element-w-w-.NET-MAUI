@@ -10,23 +10,99 @@
             Text="Moja Galeria"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1"
-            />
+            Style="{StaticResource Headline}"/>
         <Button
             Text="Dodaj zdjęcie"/>
         </VerticalStackLayout>
         <VerticalStackLayout>
-            <FlexLayout Wrap="Wrap">
-                <Image
-                    HeightRequest="100"
-                    WidthRequest="100">
-                    
-                </Image>
-            </FlexLayout>
+
+            <ScrollView>
+                <FlexLayout
+                    Wrap="Wrap"
+                    JustifyContent="SpaceAround"
+                    >
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Khaki" WidthRequest="100" HeightRequest="100"/>
+                        <Image 
+                              Source="dotnet_bot.png"
+                              HeightRequest="100"
+                              WidthRequest="100">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="alert"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="YellowGreen" WidthRequest="100" HeightRequest="100"/>
+                        <Image 
+                              Source="dotnet_bot.png"
+                              HeightRequest="100"
+                              WidthRequest="100">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="alert"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Chartreuse" WidthRequest="100" HeightRequest="100"/>
+                        <Image 
+                             Source="dotnet_bot.png"
+                             HeightRequest="100"
+                             WidthRequest="100">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="alert"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="WhiteSmoke" WidthRequest="100" HeightRequest="100"/>
+                        <Image 
+                             Source="dotnet_bot.png"
+                             HeightRequest="100"
+                             WidthRequest="100">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="alert"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Lavender" WidthRequest="100" HeightRequest="100"/>
+                        <Image 
+                Source="dotnet_bot.png"
+                HeightRequest="100"
+                WidthRequest="100">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="alert"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+
+                </FlexLayout>
+            </ScrollView>
         </VerticalStackLayout>
-        <VerticalStackLayout>
-            
+        <VerticalStackLayout
+            Margin="10">
+            <Label
+                Text="Obecna ilość zdjęć: "
+                FontSize="25"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button 
+                      Text="Poprzednia strona"
+                      BackgroundColor="NavajoWhite"
+                      TextColor="Black"
+                      WidthRequest="150"/>
+                <Button 
+                      Text="Następna strona"
+                      BackgroundColor="NavajoWhite"
+                      TextColor="Black"
+                      WidthRequest="150"/>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

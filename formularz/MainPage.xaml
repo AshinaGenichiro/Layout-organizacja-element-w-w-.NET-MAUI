@@ -40,13 +40,11 @@
             />
             <Label
                 HorizontalOptions="Center"
-                Text="Nie masz konta zarejestruj sie"
-                />
+                Text="Nie masz konta zarejestruj sie"/>
             <Button
                 HorizontalOptions="Center"
                 WidthRequest="500"
-                Text="Zaloguj"    
-            />
+                Text="Zaloguj"/>
 
 
         </VerticalStackLayout>
