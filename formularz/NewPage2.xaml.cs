@@ -2,10 +2,13 @@ namespace formularz;
 
 public partial class NewPage2 : ContentPage
 {
-	public NewPage2()
+    private int imageCount;
+    public NewPage2()
 	{
 		InitializeComponent();
-	}
+        int imageCount = photosWrap.Children.OfType<Grid>().SelectMany(g => g.Children.OfType<Image>()).Count();
+        photoCountLabel.Text = $"Obecna iloœæ zdjêæ: {imageCount}";
+    }
     private async void alert(object sender, EventArgs e)
     {
         var thumbnai = sender as Image;
