@@ -17,6 +17,13 @@
                     <Label Text="Produkt 1" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="99 zł" TextColor="Green"/>
+                    <HorizontalStackLayout>
+                     <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
                     <Grid ColumnDefinitions="*,*"
                         HorizontalOptions="Fill">
                         <Button 
@@ -39,6 +46,13 @@
                     <Label Text="Produkt 2" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="120 zł" TextColor="Green"/>
+                    <HorizontalStackLayout>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
                     <Grid ColumnDefinitions="*,*"
                         HorizontalOptions="Fill">
                         <Button 
@@ -61,6 +75,13 @@
                     <Label Text="Produkt 3" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="80 zł" TextColor="Green"/>
+                    <HorizontalStackLayout>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
                     <Grid ColumnDefinitions="*,*"
                         HorizontalOptions="Fill">
                         <Button 
@@ -83,6 +104,13 @@
                     <Label Text="Produkt 4" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="150 zł" TextColor="Green"/>
+                    <HorizontalStackLayout>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
                     <Grid ColumnDefinitions="*,*"
                               HorizontalOptions="Fill">
 
@@ -110,6 +138,13 @@
                     <Label Text="Produkt 5" FontSize="Large"/>
                     <Label Text="Opis produktu" TextColor="Gray"/>
                     <Label Text="200 zł" TextColor="Green"/>
+                    <HorizontalStackLayout>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
                     <Grid ColumnDefinitions="*,*"
                          HorizontalOptions="Fill">
                         <Button 
