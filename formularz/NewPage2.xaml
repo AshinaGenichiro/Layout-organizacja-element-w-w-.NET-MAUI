@@ -12,7 +12,10 @@
             HorizontalOptions="Center"
             Style="{StaticResource Headline}"/>
         <Button
-            Text="Dodaj zdjęcie"/>
+            Text="Dodaj zdjęcie"
+            BackgroundColor="NavajoWhite"
+            TextColor="Black"
+            Margin="10"/>
         </VerticalStackLayout>
         <VerticalStackLayout>
 
@@ -85,9 +88,21 @@
                     <Grid HeightRequest="100" WidthRequest="100">
                         <BoxView BackgroundColor="Lavender" WidthRequest="100" HeightRequest="100"/>
                         <Image 
-          Source="dotnet_bot.png"
-          HeightRequest="100"
-          WidthRequest="100">
+                              Source="dotnet_bot.png"
+                              HeightRequest="100"
+                              WidthRequest="100">
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="alert"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Azure" WidthRequest="100" HeightRequest="100"/>
+                        <Image 
+                              Source="dotnet_bot.png"
+                              HeightRequest="100"
+                              WidthRequest="100">
 
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="alert"/>
@@ -103,18 +118,21 @@
                  x:Name="photoCountLabel"   
                  Text="Obecna ilość zdjęć: "
                  FontSize="25"
-                 HorizontalOptions="Center"/>
+                 HorizontalOptions="Center"
+                Margin="10"/>
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Button 
                       Text="Poprzednia strona"
                       BackgroundColor="NavajoWhite"
                       TextColor="Black"
-                      WidthRequest="150"/>
+                      WidthRequest="150"
+                    Margin="5"/>
                 <Button 
                       Text="Następna strona"
                       BackgroundColor="NavajoWhite"
                       TextColor="Black"
-                      WidthRequest="150"/>
+                      WidthRequest="150"
+                    Margin="5"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </VerticalStackLayout>
